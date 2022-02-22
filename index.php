@@ -54,7 +54,7 @@ if (isset($_POST["btn"])) {
 
 			<?php
 			for ($i = 0; $i <= 8; $i++) {
-				printf('<input type = "text" id = "ip" name = "box%s" value = "%s" onclick ="myFunction()" >', $i, $box[$i]);
+				printf('<input type = "text" id = "ip" name = "box%s" value = "%s">', $i, $box[$i]);
 				if ($i == 2 || $i == 5 || $i == 8) {
 					print("<br>");
 				}
@@ -66,11 +66,6 @@ if (isset($_POST["btn"])) {
 			}
 
 			?>
-			<script>
-				function myFunction() {
-					document.getElementById("ip").innerHTML = "X";
-				}
-			</script>
 		</form>
 	</div>
 </body>
